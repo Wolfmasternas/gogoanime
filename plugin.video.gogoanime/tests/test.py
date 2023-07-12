@@ -67,7 +67,7 @@ for li in document.find_all('li'):
 #         print(name)
 
 #Resolve vidstreaming
-# response = requests.get("https://vidstreaming.io/streaming.php?id=MTQ2MDEy&title=Mewkledreamy+episode+22&typesub=SUB")
+# response = requests.get("https://gotaku1.com/streaming.php?id=MTQ2MDEy&title=Mewkledreamy+episode+22&typesub=SUB")
 # document = BeautifulSoup(response.text, 'html.parser')
 # id = document.find('input', id="id")['value']
 # title = document.find('input', id="title")['value']
@@ -78,7 +78,7 @@ for li in document.find_all('li'):
 # print(jsonObj['source_bk'][0]['file'])
 
 #resolve gogoserver
-# response = requests.get("https://gogo-stream.com/load.php?id=MTQ2MDY0&title=Rail+Romanesque+episode+1&typesub=SUB")
+# response = requests.get("https://gotaku1.com/load.php?id=MTQ2MDY0&title=Rail+Romanesque+episode+1&typesub=SUB")
 # document = BeautifulSoup(response.text, 'html.parser')
 # script = document.find('div', class_="videocontent").find('script', type="text/JavaScript")
 # it = re.search("sources:\[{file: \'(.+)\',label:", script.string, flags=0)
@@ -110,7 +110,7 @@ for li in document.find_all('li'):
 #         print(re.search("^background: url\(\'(.+)\'\);$", style, flags=0).group(1))
 
 #popular
-# response = requests.get("https://www2.gogoanime.video/popular.html?page=1")
+# response = requests.get("https://www3.gogoanimes.fi/popular.html?page=1")
 # document = BeautifulSoup(response.text, 'html.parser').find('div', class_="last_episodes")
 # for li in document.find_all('li'):
 #         a = li.find('a')
@@ -119,11 +119,11 @@ for li in document.find_all('li'):
 #         print(a.find('img')['src'])
 
 #genre
-# response = requests.get("https://www2.gogoanime.video/genre/action?page=1")
+# response = requests.get("https://www3.gogoanimes.fi/genre/action?page=1")
 # document = BeautifulSoup(response.text, 'html.parser').find('div', class_="last_episodes")
 
 # #category
-# response = requests.get("https://www2.gogoanime.video/category/boruto-naruto-next-generations")
+# response = requests.get("https://www3.gogoanimes.fi/category/boruto-naruto-next-generations")
 # document = BeautifulSoup(response.text, 'html.parser').find('div', class_="anime_info_body_bg")
 # img = document.find('img')['src'].encode('utf-8').strip()
 # title = document.find('h1').string.encode('utf-8').strip()
@@ -162,7 +162,7 @@ for li in document.find_all('li'):
 
 #     return ''.join(digits)
 
-# response = requests.get("https://www.mp4upload.com/embed-m380e4rz6c19.html")
+# response = requests.get("https://www.mp4upload.com/embed-k9f1bisrpeo8.html")
 # document = BeautifulSoup(response.text, 'html.parser').find_all('script', type="text/javascript")
 # for script in document:
 #     if script.string is not None and "eval(function(p,a,c,k,e,d)" in script.string:
