@@ -10,7 +10,7 @@ digs = string.digits + string.ascii_letters
 
 session = Session()
 
-domain = 'https://www2.gogoanime.video'
+domain = 'https://www3.gogoanimes.fi'
 
 def request(path):
     response = session.get(domain + path)
